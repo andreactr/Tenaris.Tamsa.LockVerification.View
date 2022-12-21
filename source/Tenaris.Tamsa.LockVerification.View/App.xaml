@@ -1,0 +1,19 @@
+﻿<Application x:Class="Tenaris.Tamsa.LockVerification.View.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ViewModel="clr-namespace:Tenaris.Tamsa.LockVerification.ViewModel;assembly=Tenaris.Tamsa.LockVerification.ViewModel"
+             StartupUri="MainWindow.xaml"
+             DispatcherUnhandledException="AppDispatcherUnhandledException">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Tenaris.Library.UI.Framework;component/Themes/Generic.xaml"/>
+                <ResourceDictionary Source="/Resources/Global.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Instancia la jerarquia de datos -->
+            <ViewModel:ViewModelInstances x:Key="DataInstances" />
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

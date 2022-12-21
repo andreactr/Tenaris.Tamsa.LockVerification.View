@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:languages="clr-namespace:Tenaris.Tamsa.LockVerification.LanguageResource;assembly=Tenaris.Tamsa.LockVerification.LanguageResource"
+                    xmlns:util="clr-namespace:Tenaris.Tamsa.LockVerification.View.Utilities">
+
+    <languages:Language x:Key="LanguageResources" />
+
+    <util:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+
+</ResourceDictionary>

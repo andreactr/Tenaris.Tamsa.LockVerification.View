@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenaris.Tamsa.LockVerification.View", "source\Tenaris.Tamsa.LockVerification.View\Tenaris.Tamsa.LockVerification.View.csproj", "{7912E010-E93B-421E-8E6D-E24DEFB2E230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenaris.Tamsa.LockVerification.ViewModel", "source\Tenaris.Tamsa.LockVerification.ViewModel\Tenaris.Tamsa.LockVerification.ViewModel.csproj", "{1712D73A-8BA6-4FBE-915A-F22336B7FE29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenaris.Tamsa.LockVerification.Model", "source\Tenaris.Tamsa.LockVerification.Model\Tenaris.Tamsa.LockVerification.Model.csproj", "{1AE03579-8CFD-499B-B110-AC8B6E7A9515}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tenaris.Tamsa.LockVerification.LanguageResource", "source\Tenaris.Tamsa.LockVerification.LanguageResource\Tenaris.Tamsa.LockVerification.LanguageResource.csproj", "{F7174EA9-AF55-44B1-8197-5AF22B0F7C56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7912E010-E93B-421E-8E6D-E24DEFB2E230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7912E010-E93B-421E-8E6D-E24DEFB2E230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7912E010-E93B-421E-8E6D-E24DEFB2E230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7912E010-E93B-421E-8E6D-E24DEFB2E230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1712D73A-8BA6-4FBE-915A-F22336B7FE29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1712D73A-8BA6-4FBE-915A-F22336B7FE29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1712D73A-8BA6-4FBE-915A-F22336B7FE29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1712D73A-8BA6-4FBE-915A-F22336B7FE29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AE03579-8CFD-499B-B110-AC8B6E7A9515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AE03579-8CFD-499B-B110-AC8B6E7A9515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AE03579-8CFD-499B-B110-AC8B6E7A9515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AE03579-8CFD-499B-B110-AC8B6E7A9515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7174EA9-AF55-44B1-8197-5AF22B0F7C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7174EA9-AF55-44B1-8197-5AF22B0F7C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7174EA9-AF55-44B1-8197-5AF22B0F7C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7174EA9-AF55-44B1-8197-5AF22B0F7C56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C84E1367-9C4D-4329-8D08-E97BAA2B0548}
+	EndGlobalSection
+EndGlobal

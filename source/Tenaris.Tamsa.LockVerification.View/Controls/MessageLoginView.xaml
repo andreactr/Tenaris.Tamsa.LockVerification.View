@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="Tenaris.Tamsa.LockVerification.View.Controls.MessageLoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:helper="clr-namespace:Tenaris.Tamsa.LockVerification.View.Utilities"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="700">
+    <DockPanel>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="31"></RowDefinition>
+                <RowDefinition Height="31"></RowDefinition>
+                <RowDefinition Height="31"></RowDefinition>
+                <RowDefinition Height="31"></RowDefinition>
+                <RowDefinition Height="31"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" DockPanel.Dock="Top" Style="{StaticResource Header}" Content="{Binding Authorization, Source={StaticResource LanguageResources}}"/>
+            
+            <Label Grid.Column="0" Grid.Row="1" Style="{StaticResource TableItemCell}"  Content="{Binding User, Source={StaticResource LanguageResources}}" FontSize="14" Height="30"></Label>
+            <TextBox Grid.Column="1" Grid.Row="1" Style="{StaticResource TableValueInputCell}" MaxLength="40" Text="{Binding User, Mode=TwoWay}" HorizontalContentAlignment="Left" Grid.ColumnSpan="2" Height="29"/>
+
+            <Label Grid.Column="0" Grid.Row="2" Style="{StaticResource TableItemCell}"  Content="{Binding Password, Source={StaticResource LanguageResources}}" FontSize="14" Height="30"></Label>
+            <PasswordBox x:Name="txtPassword" Grid.Column="1" Grid.Row="2"
+                         helper:PasswordHelper.Attach="True" helper:PasswordHelper.Password="{Binding Password, Mode=TwoWay}" 
+                         Style="{StaticResource TableValueInputCell}"  HorizontalContentAlignment="Left" Grid.ColumnSpan="2" Height="29"/>
+
+            <Label Grid.Column="0" Grid.Row="3" Style="{StaticResource TableItemCell}"  Content="{Binding Comments, Source={StaticResource LanguageResources}}" FontSize="14" Height="30"></Label>
+            <TextBox Grid.Column="1" Grid.Row="3" Grid.RowSpan="2"  Style="{StaticResource TableValueInputCell}" Text="{Binding Comment, Mode=TwoWay}" Height="60" VerticalAlignment="Top" TextWrapping="Wrap" HorizontalContentAlignment="Left" Grid.ColumnSpan="2" Margin="1,1,1,0" />
+
+            <Border Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2"  Background="#FFFFFF">
+            <TextBlock Style="{StaticResource TextBlockErrorValue}"  Text="{Binding ErrorMessage}"></TextBlock>
+            </Border>
+        </Grid>
+        
+        <Label DockPanel.Dock="Top" Content="{Binding Message, Source={StaticResource LanguageResources}}"  Style="{StaticResource Header}" HorizontalContentAlignment="Center"  />
+        <DockPanel DockPanel.Dock="Top">
+            <Border Background="#FFFFFF">
+            <TextBlock Text="{Binding TextMessage}" Style="{StaticResource TextBlockMessageHighRelevance}" VerticalAlignment="Center"></TextBlock>
+            </Border>
+        </DockPanel>
+        
+        
+    </DockPanel>
+</UserControl>
